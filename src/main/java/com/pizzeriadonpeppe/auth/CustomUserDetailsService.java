@@ -1,7 +1,7 @@
-package com.manrique.Generic_web_app.auth;
+package com.pizzeriadonpeppe.auth;
 
-import com.manrique.Generic_web_app.entities.User;
-import com.manrique.Generic_web_app.repository.UserRepository;
+import com.pizzeriadonpeppe.entities.User;
+import com.pizzeriadonpeppe.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,4 +1,4 @@
-package com.manrique.Generic_web_app.auth;
+package com.pizzeriadonpeppe.auth;
 
 import jakarta.servlet.DispatcherType;
 import org.springframework.context.annotation.Bean;

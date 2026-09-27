@@ -1,4 +1,4 @@
-package com.manrique.Generic_web_app.exceptions;
+package com.pizzeriadonpeppe.exceptions;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

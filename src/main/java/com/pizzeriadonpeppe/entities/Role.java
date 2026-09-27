@@ -1,4 +1,4 @@
-package com.manrique.Generic_web_app.entities;
+package com.pizzeriadonpeppe.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

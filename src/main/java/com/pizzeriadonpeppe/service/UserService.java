@@ -1,9 +1,9 @@
-package com.manrique.Generic_web_app.service;
+package com.pizzeriadonpeppe.service;
 
-import com.manrique.Generic_web_app.DTOs.UserRegisterDTO;
-import com.manrique.Generic_web_app.repository.RoleRepository;
-import com.manrique.Generic_web_app.repository.UserRepository;
-import com.manrique.Generic_web_app.entities.User;
+import com.pizzeriadonpeppe.DTOs.UserRegisterDTO;
+import com.pizzeriadonpeppe.repository.RoleRepository;
+import com.pizzeriadonpeppe.repository.UserRepository;
+import com.pizzeriadonpeppe.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

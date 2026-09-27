@@ -1,4 +1,4 @@
-package com.manrique.Generic_web_app.DTOs;
+package com.pizzeriadonpeppe.DTOs;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

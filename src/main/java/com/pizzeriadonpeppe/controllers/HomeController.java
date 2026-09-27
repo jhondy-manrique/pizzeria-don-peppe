@@ -1,4 +1,4 @@
-package com.manrique.Generic_web_app.controllers;
+package com.pizzeriadonpeppe.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

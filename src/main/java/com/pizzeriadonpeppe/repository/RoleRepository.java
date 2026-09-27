@@ -1,6 +1,6 @@
-package com.manrique.Generic_web_app.repository;
+package com.pizzeriadonpeppe.repository;
 
-import com.manrique.Generic_web_app.entities.Role;
+import com.pizzeriadonpeppe.entities.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,10 +1,9 @@
-package com.manrique.Generic_web_app.controllers;
+package com.pizzeriadonpeppe.controllers;
 
-import com.manrique.Generic_web_app.DTOs.UserRegisterDTO;
-import com.manrique.Generic_web_app.service.UserService;
+import com.pizzeriadonpeppe.DTOs.UserRegisterDTO;
+import com.pizzeriadonpeppe.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.pulsar.PulsarProperties;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

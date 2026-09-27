@@ -1,4 +1,4 @@
-package com.manrique.Generic_web_app.exceptions;
+package com.pizzeriadonpeppe.exceptions;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
