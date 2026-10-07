@@ -13,7 +13,7 @@ CREATE TABLE products (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     category_id BIGINT NOT NULL,
     sku VARCHAR(50) UNIQUE,
-    name VARCHAR(150) NOT NULL,
+    name VARCHAR(150) NOT NULL UNIQUE,
     description TEXT,
     price NUMERIC(10, 2) NOT NULL CONSTRAINT chk_products_price_positive CHECK (price >= 0),
     image_url VARCHAR(255),

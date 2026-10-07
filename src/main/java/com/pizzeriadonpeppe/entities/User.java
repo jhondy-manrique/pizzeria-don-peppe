@@ -22,8 +22,8 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @Column(name = "is_active", nullable = false)
-    private boolean enabled = true;
+    @Column(nullable = false)
+    private boolean isActive = true;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
@@ -35,9 +35,9 @@ public class User {
 
     public User(){};
 
-    public User(String email, boolean enabled, String password, Set<Role> roles, String username) {
+    public User(String email, boolean isActive, String password, Set<Role> roles, String username) {
         this.email = email;
-        this.enabled = enabled;
+        this.isActive = isActive;
         this.password = password;
         this.roles = roles;
         this.username = username;
@@ -75,12 +75,12 @@ public class User {
         this.id = id;
     }
 
-    public boolean isEnabled() {
-        return enabled;
+    public boolean isActive() {
+        return isActive;
     }
 
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
+    public void setActive(boolean active) {
+        this.isActive = active;
     }
 
     public String getEmail() {
