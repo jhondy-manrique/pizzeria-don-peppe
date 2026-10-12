@@ -8,6 +8,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -44,6 +45,20 @@ public class CategoryController {
         } catch (DataIntegrityViolationException e) {
             flash.addFlashAttribute("categoryError","La categoria ingresada ya existe");
         }
+        return "redirect:/products";
+    }
+
+    @PostMapping("/{id}/activate")
+    public String activateCategory(@PathVariable Long id, RedirectAttributes flash){
+        flash.addFlashAttribute("openCategoryModal",true);
+        categoryService.activateCategory(id);
+        return "redirect:/products";
+    }
+
+    @PostMapping("/{id}/desactivate")
+    public String desactivateCategory(@PathVariable Long id, RedirectAttributes flash){
+        flash.addFlashAttribute("openCategoryModal",true);
+        categoryService.desactivateCategory(id);
         return "redirect:/products";
     }
 }
